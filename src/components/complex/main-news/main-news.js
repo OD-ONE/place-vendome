@@ -66,11 +66,10 @@ export default function initMainNews() {
   const items = document.querySelectorAll('.main-news__item');
   initObserver(section, () => {
     items.forEach((elem, index) => {
-      console.log(index);
       setTimeout(() => {
         elem.classList.add('main-news__item--show');
       }, 500 * index);
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.4 });
 }
 /* end main-news */
