@@ -1,0 +1,9 @@
+{# begin icon #}
+{% macro icon(mod, svg) %}
+<div class="icon {{ mod }}" role="img" aria-hidden="true">
+  <svg class="icon__svg">
+    <use xlink:href="images/sprite.svg#{{ svg }}"></use>
+  </svg>
+</div>
+{% endmacro %}
+{# end icon #}

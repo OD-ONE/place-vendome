@@ -6,11 +6,14 @@
 // simple
 @import "components/simple/page.scss";
 @import "components/simple/wrapper.scss";
+@import "components/simple/button.scss";
 
 // embedded
-/* @import "components/embedded/*"; */
+@import "components/embedded/icon/icon.scss";
+@import "components/embedded/navigation/navigation.scss";
 
 // complex
 @import "components/complex/header/header.scss";
 @import "components/complex/footer/footer.scss";
 @import "components/complex/hero/hero.scss";
+@import "components/complex/main-news/main-news.scss";
