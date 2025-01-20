@@ -2,6 +2,7 @@
 import gulp from 'gulp'; // Подключает сам gulp
 import browserSync from 'browser-sync'; // Автоматическая перезагрузка страницы
 import del from 'del'; // Удаляет что либо
+import fs from 'fs';
 import path from 'path'; // Манипуляции с путями
 import Yargs from 'yargs'; // Проверяет наличие флага -production в консоли
 import gulpif from 'gulp-if'; // Условия
@@ -65,10 +66,51 @@ const buildResources = 'build/resources';
 
 // Настройки
 const distMin = true; // Минификация CSS
-const distRev = false; // Хэш
+const distRev = true; // Хэш
 const distImgMin = false; // Сжатие изображений
 const webpImg = false; // Создание WEBP изображений
 const webpack = true;
+
+// Добавляем новую задачу для создания компонента
+function createComponent(cb) {
+  const NAME = process.argv[4]; // Читаем имя компонента из аргумента командной строки
+  const componentPath = process.argv.includes('--embedded')
+    ? path.join('src/components/embedded', NAME)
+    : path.join('src/components/complex', NAME);
+
+  if (!NAME) {
+    console.error('Укажите имя компонента. Пример: gulp createComponent --name myComponent');
+    cb();
+    return;
+  }
+
+  // Проверяем наличие папки и создаем, если её нет
+  if (!fs.existsSync(componentPath)) {
+    fs.mkdirSync(componentPath, { recursive: true });
+  }
+
+  // Генерируем файлы и добавляем в них комментарии
+  const files = {
+    js: `/* begin ${NAME} */\n\n/* end ${NAME} */\n`,
+    scss: `/* begin ${NAME} */\n\n/* end ${NAME} */\n`,
+    html: `{# begin ${NAME} #}\n\n{# end ${NAME} #}\n`,
+  };
+
+  Object.keys(files).forEach((ext) => {
+    const filePath = path.join(componentPath, `${NAME}.${ext}`);
+    fs.writeFileSync(filePath, files[ext]);
+  });
+
+  console.log(`Компонент ${NAME} создан успешно по пути: ${componentPath}`);
+  cb();
+}
+
+// Добавляем задачу в Gulp
+gulp.task('createComponent', createComponent);
+
+// Пример использования:
+// gulp createComponent --name myComponent (добавит в src/components)
+// gulp createComponent --name myComponent --embedded (добавит в src/components/embedded)
 
 const manageEnvironment = (environment) => {
   environment.addExtension('EmbedTag', new EmbedTag());

@@ -1,0 +1,55 @@
+/* begin main-gift */
+.main-gift {
+  padding: 90px 0 101px;
+  color: white;
+  background-color: #233746;
+
+  &__wrapper {
+    display: grid;
+    grid-gap: 53px;
+    grid-template-columns: 740px 1fr;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 33px;
+  }
+
+  &__left-head {
+    position: relative;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 31px;
+    font-weight: 500;
+    font-size: 216px;
+    line-height: 184px;
+    text-transform: uppercase;
+
+    span {
+      margin-left: 79px;
+      color: #B2DEFF;
+    }
+  }
+
+  &__suptitle {
+    position: absolute;
+    top: 11px;
+    right: 44px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    margin-right: 24px;
+    margin-left: auto;
+  }
+}
+/* end main-gift */

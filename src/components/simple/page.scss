@@ -1,10 +1,19 @@
 /* begin page */
 body,
 .page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   overflow-y: scroll;
   color: #000;
   font-weight: 400;
   font-size: 16px;
-  font-family: roboto, sans-serif;
+  font-family: $font;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 /* end page */

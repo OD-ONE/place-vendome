@@ -6,9 +6,18 @@
 // simple
 @import "components/simple/page.scss";
 @import "components/simple/wrapper.scss";
+@import "components/simple/button.scss";
+@import "components/simple/wrapper.scss";
 
 // embedded
-/* @import "components/embedded/*"; */
+@import "components/embedded/icon/icon.scss";
+@import "components/embedded/navigation/navigation.scss";
 
 // complex
+@import "components/complex/header/header.scss";
+@import "components/complex/footer/footer.scss";
+@import "components/complex/hero/hero.scss";
+@import "components/complex/main-news/main-news.scss";
+@import "components/complex/main-cinema/main-cinema.scss";
+@import "components/complex/main-gift/main-gift.scss";
 @import "components/complex/life/life.scss";

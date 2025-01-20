@@ -7,10 +7,14 @@
 
   <body class="page">
     {# begin header #}
-    <header class="header"></header>
+    {% include "components/complex/header/header.html" %}
     {# end header #}
 
     <div class="page__content">
+      {% include "components/complex/hero/hero.html" %}
+      {% include "components/complex/main-news/main-news.html" %}
+      {% include "components/complex/main-cinema/main-cinema.html" %}
+      {% include "components/complex/main-gift/main-gift.html" %}
       <div class="life__ppp"></div>
       {# begin life #}
       <div class="life">
@@ -54,7 +58,7 @@
     </div>
 
     {# begin footer #}
-    <footer class="footer"></footer>
+    {% include "components/complex/footer/footer.html" %}
     {# end footer #}
   </body>
 </html>

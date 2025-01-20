@@ -1,0 +1,19 @@
+/* begin button */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  &--ghost {
+    width: 185px;
+    height: 50px;
+    border: 1px solid currentColor;
+    border-radius: 25px;
+  }
+}
+/* end button */
