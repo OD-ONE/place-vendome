@@ -7,15 +7,15 @@
 
   <body class="page">
     {# begin header #}
-    <header class="header"></header>
+    {% include "components/complex/header/header.html" %}
     {# end header #}
 
     <div class="page__content">
-      {# content #}
+      {% include "components/complex/hero/hero.html" %}
     </div>
 
     {# begin footer #}
-    <footer class="footer"></footer>
+    {% include "components/complex/footer/footer.html" %}
     {# end footer #}
   </body>
 </html>

@@ -13,14 +13,24 @@
   font-style: normal | italic | oblique
 */
 
-/* begin fonts */
-/* @font-face {
-  font-weight: 400;
-  font-family: roboto;
-  font-style: normal;
-  src:
-    url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
-    url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.woff") format("woff");
-  font-display: swap;
-} */
+@mixin font-face($weight, $name, $style, $path) {
+  @font-face {
+    font-weight: $weight;
+    font-family: $name;
+    font-style: $style;
+    src: url("../fonts/#{ $path }.woff2") format("woff2"),
+         url("../fonts/#{ $path }.woff") format("woff");
+    font-display: swap;
+  }
+}
+
+// cofo normal
+@include font-face(300, montserrat, normal, 'montserrat/Montserrat-Light');
+@include font-face(300, montserrat, italic, 'montserrat/Montserrat-LightItalic');
+@include font-face(400, montserrat, normal, 'montserrat/Montserrat-Regular');
+@include font-face(400, montserrat, italic, 'montserrat/Montserrat-Italic');
+@include font-face(500, montserrat, normal, 'montserrat/Montserrat-Medium');
+@include font-face(500, montserrat, italic, 'montserrat/Montserrat-MediumItalic');
+@include font-face(600, montserrat, normal, 'montserrat/Montserrat-Semibold');
+@include font-face(600, montserrat, italic, 'montserrat/Montserrat-SemiboldItalic');
 /* end fonts */

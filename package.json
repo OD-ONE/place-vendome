@@ -68,6 +68,7 @@
     "yargs": "17.7.2"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "vanilla-lazyload": "^19.1.3"
   }
 }
