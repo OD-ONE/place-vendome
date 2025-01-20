@@ -22,15 +22,52 @@
     }
   }
 
-  &__ppp {
-    width: 100%;
-    height: 1000px;
-  }
-
   &__start {
+    position: relative;
+    z-index: 100;
     display: flex;
     flex-shrink: 0;
     min-width: 40%;
+  }
+
+  &__start-title {
+    position: absolute;
+    top: calc(50% - 79px);
+    right: -113px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    transform: translateY(-50%);
+  }
+
+  &__start-title-left {
+    color: #fff;
+    font-weight: 500;
+    font-size: 86px;
+    text-transform: uppercase;
+  }
+
+  &__start-title-center {
+    width: 394px;
+    height: 257px;
+    margin: 23px -2px -25px -110px;
+  }
+
+  &__start-title-right {
+    color: #fff;
+    font-weight: 500;
+    font-size: 86px;
+    text-transform: uppercase;
+  }
+
+  &__start-desc {
+    position: absolute;
+    top: calc(50% + 124px);
+    left: calc(50% + 25px);
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
   }
 
   &__container {
@@ -39,6 +76,7 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     flex-shrink: 0;
     width: 52vw;
@@ -92,6 +130,22 @@
         }
       }
     }
+
+    &--visible {
+      .life {
+        &__item-desc {
+          transform: translateY(0);
+        }
+
+        &__item-title {
+          transform: translateY(0);
+        }
+
+        &__item-link {
+          opacity: 1;
+        }
+      }
+    }
   }
 
   &__item-inner {
@@ -105,7 +159,67 @@
   }
 
   &__item-num {
-    
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  &__item-title-container {
+    position: absolute;
+    bottom: 136px;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+  }
+
+  &__item-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 82px;
+    text-transform: uppercase;
+    transform: translateY(100%);
+    transition: 0.6s;
+  }
+
+  &__item-desc-container {
+    position: absolute;
+    bottom: 323px;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%);
+  }
+
+  &__item-desc {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    transform: translateY(100%);
+    transition: 0.6s;
+  }
+
+  &__item-link {
+    position: absolute;
+    right: 48px;
+    bottom: 155px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.6s;
+  }
+
+  &__item-link-icon {
+    width: 12px;
+    height: 12px;
+    fill: #000;
   }
 }
 /* end life */

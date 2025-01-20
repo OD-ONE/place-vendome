@@ -12,17 +12,12 @@ if (document.querySelector('.life')) {
       trigger: '.life',
       pin: true,
       start: () => { return '0% 0%'; },
-      end: () => {
-        if (document.querySelector('.life')) {
-          return `+=${document.querySelector('.life').scrollWidth - window.innerWidth}`;
-        }
-
-        return '';
-      },
-      scrub: 0.5,
+      end: '+=270%',
+      pinSpacing: true,
+      scrub: 0.6,
       snap: false,
       markers: true,
-      anticipatePin: 1,
+      anticipatePin: 0.5,
       onEnter: () => {
         document.querySelector('.life').classList.add('life--active');
       },
@@ -45,37 +40,74 @@ if (document.querySelector('.life')) {
     y: '72.8vh',
   });
 
-  GSAPHorizontalScrollTL.to(sections, {
-    xPercent: -100 * (sections.length - 1.2),
+  GSAPHorizontalScrollTL.to('.life__start', {
+    xPercent: -800,
     ease: 'none',
   });
+
+  GSAPHorizontalScrollTL.to(sections, {
+    xPercent: -100 * (sections.length - 1.15),
+    ease: 'none',
+  }, '<');
 
   GSAPHorizontalScrollTL.to('.life__item--1 .life__item-img-container', {
     y: '0vh',
     ease: 'none',
+    // ease: 'power2.out',
     // duration: 0.135,
-    duration: 0.03,
+    duration: 0.1,
+    onUpdate() {
+      if (this.progress() === 1) {
+        document.querySelector('.life__item--1').classList.add('life__item--visible');
+      } else {
+        document.querySelector('.life__item--1').classList.remove('life__item--visible');
+      }
+    },
   }, '<');
 
   GSAPHorizontalScrollTL.to('.life__item--2 .life__item-img-container', {
     y: '0vh',
     ease: 'none',
+    // ease: 'power2.out',,
     // duration: 0.315,
     duration: 0.2,
+    onUpdate() {
+      if (this.progress() === 1) {
+        document.querySelector('.life__item--2').classList.add('life__item--visible');
+      } else {
+        document.querySelector('.life__item--2').classList.remove('life__item--visible');
+      }
+    },
   }, '<');
 
   GSAPHorizontalScrollTL.to('.life__item--3 .life__item-img-container', {
     y: '0vh',
     ease: 'none',
+    // ease: 'power2.out',
     // duration: 0.495,
     duration: 0.39,
+    onUpdate() {
+      if (this.progress() === 1) {
+        document.querySelector('.life__item--3').classList.add('life__item--visible');
+      } else {
+        document.querySelector('.life__item--3').classList.remove('life__item--visible');
+      }
+    },
   }, '<');
 
   GSAPHorizontalScrollTL.to('.life__item--4 .life__item-img-container', {
     y: '0vh',
     ease: 'none',
+    // ease: 'power2.out',
     // duration: 0.6,
     duration: 0.5,
+    onUpdate() {
+      if (this.progress() === 1) {
+        document.querySelector('.life__item--4').classList.add('life__item--visible');
+      } else {
+        document.querySelector('.life__item--4').classList.remove('life__item--visible');
+      }
+    },
   }, '<');
 }
 /* end life */
