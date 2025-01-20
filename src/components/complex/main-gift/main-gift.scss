@@ -1,6 +1,6 @@
 /* begin main-gift */
 .main-gift {
-  padding: 90px 0 101px;
+  padding: 90px 0 102px;
   color: white;
   background-color: #233746;
 
@@ -31,9 +31,34 @@
     line-height: 184px;
     text-transform: uppercase;
 
-    span {
+    &--show {
+      .main-gift {
+        &__title-part {
+          span {
+            transform: rotateY(0);
+          }
+        }
+      }
+    }
+  }
+
+  &__title-part {
+    display: inline-flex;
+
+    &--blue {
       margin-left: 79px;
       color: #B2DEFF;
+    }
+
+    span {
+      transform: rotateY(90deg);
+      transition: $transition transform;
+
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+          transition-delay: $i * 0.1s;
+        }
+      }
     }
   }
 
