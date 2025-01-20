@@ -8,6 +8,8 @@ import initMainCinema from './components/complex/main-cinema/main-cinema.js';
 import initMainGift from './components/complex/main-gift/main-gift.js';
 import initMainStay from './components/complex/main-stay/main-stay.js';
 
+import './components/complex/life/life.js';
+
 new LazyLoad({
   elements_selector: '.js-lazy',
   threshold: 1000,
