@@ -1,3 +1,3 @@
 /* begin scripts */
-/* import './components/complex/...'; */
+import './components/complex/life/life.js';
 /* end scripts */

@@ -5,9 +5,10 @@
 
 // simple
 @import "components/simple/page.scss";
+@import "components/simple/wrapper.scss";
 
 // embedded
 /* @import "components/embedded/*"; */
 
 // complex
-/* @import "components/complex/*"; */
+@import "components/complex/life/life.scss";
