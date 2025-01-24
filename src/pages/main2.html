@@ -6,6 +6,10 @@
   </head>
 
   <body class="page">
+    {# begin header #}
+    {% include "components/complex/header/header--2.html" %}
+    {# end header #}
+    
     <div class="page__content">
       {# begin preloader #}
       {# <div class="preloader">
@@ -18,6 +22,9 @@
         <div class="preloader__loading">LOADING</div>
       </div> #}
       {# end preloader #}
+
+      {% include "components/complex/hero2/hero2.html" %}
+
       <div class="swiper-anim">
         <div class="swiper swiper-anim__el">
           <div class="swiper-wrapper">
@@ -28,6 +35,9 @@
         </div>
       </div>
       <div class="swiper-anim__mesto"></div>
+
+
+      {% include "components/complex/brands/brands.html" %}
     </div>
   </body>
 </html>
