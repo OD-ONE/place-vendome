@@ -1,0 +1,40 @@
+/* begin cursor--arrow */
+.cursor-arrow  {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: lightgray;
+  cursor: none; /* Скрываем курсор */
+
+  &__cursor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-image: url("data:image/svg+xml,%3Csvg width='90' height='90' viewBox='0 0 90 90' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1961_2110)'%3E%3Cpath d='M45 90C69.8528 90 90 69.8528 90 45C90 20.1472 69.8528 0 45 0C20.1472 0 0 20.1472 0 45C0 69.8528 20.1472 90 45 90Z' fill='%23F3F3F3'/%3E%3Cpath d='M61.9648 44.698C61.994 44.6292 62.0005 44.5556 62.0086 44.4836C62.0135 44.4516 62.0281 44.4244 62.0281 44.3908C62.0281 44.3155 62.0038 44.2483 61.9843 44.1795C61.9762 44.1507 61.9778 44.1187 61.9665 44.0899C61.9243 43.9858 61.8611 43.8946 61.78 43.8178L47.1951 29.4235C46.8789 29.1114 46.3648 29.1114 46.0486 29.4235C45.7324 29.7356 45.7324 30.2429 46.0486 30.555L59.2567 43.5905H27.5686C27.1211 43.5905 26.7578 43.949 26.7578 44.3908C26.7578 44.8325 27.1211 45.191 27.5686 45.191H59.26L46.0486 58.2297C45.7324 58.5418 45.7324 59.0491 46.0486 59.3612C46.2075 59.5164 46.4151 59.5949 46.6227 59.5949C46.8302 59.5949 47.0378 59.5164 47.1951 59.3628L61.7897 44.9589C61.8124 44.9365 61.8205 44.9077 61.84 44.8853C61.887 44.8261 61.9357 44.7685 61.9648 44.698Z' fill='%23081E29'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1961_2110'%3E%3Crect width='90' height='90' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.4s transform;
+    pointer-events: none; /* Исключаем из событий */
+
+    &--show {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    &--hidden {
+      transform: translate(-50%, -50%) scale(0) !important;
+    }
+
+    &--right {
+      transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+
+    &--left {
+      transform: translate(-50%, -50%) scale(1) rotate(180deg);
+    }
+  }
+}
+/* end cursor--arrow */
