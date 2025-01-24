@@ -49,6 +49,7 @@ export default function initMainNews() {
     slidesPerView: 'auto',
     speed: 600,
     spaceBetween: 213,
+    loop: true,
     navigation: {
       prevEl: '.main-news__swiper-nav .navigation__btn--prev',
       nextEl: '.main-news__swiper-nav .navigation__btn--next',

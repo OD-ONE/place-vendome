@@ -1,0 +1,161 @@
+/* begin holidays */
+.holidays {
+  position: relative;
+  height: 200vh;
+  background: #0F1921;
+
+  &--visible {
+    .holidays {
+      &__content {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__bg {
+    position: relative;
+    top: 100vh;
+    width: 100%;
+    height: 100vh;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      content: "";
+    }
+  }
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.6s;
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    position: absolute;
+    top: calc(50% - 85px);
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.6s;
+  }
+
+  &__title {
+    margin: 0 0 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 72px;
+    font-family: $font-title;
+    line-height: 72px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0 0 34px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    color: #fff;
+  }
+
+  &__wrapper {
+    position: absolute;
+    bottom: 66px;
+    left: 50%;
+    z-index: 1;
+    height: 140px;
+    transform: translateX(-50%);
+  }
+
+  &__brands {
+    display: flex;
+    gap: 0 152px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(#0F1921, 0.7);
+    backdrop-filter: blur(4px);
+  }
+
+  &__brand {
+    &--active {
+      .holidays {
+        &__brand-logo {
+          fill: rgba(#fff, 1);
+        }
+      }
+    }
+  }
+
+  &__brand-logo {
+    cursor: pointer;
+    transition: 0.6s;
+    fill: rgba(#fff, 0.3);
+
+    &:hover {
+      fill: rgba(#fff, 1);
+    }
+
+    &--lv {
+      width: 120px;
+      height: 13px;
+    }
+
+    &--cartier {
+      width: 120px;
+      height: 34px;
+    }
+
+    &--prada {
+      width: 120px;
+      height: 34px;
+    }
+
+    &--gucci {
+      width: 120px;
+      height: 19px;
+    }
+
+    &--dior {
+      width: 120px;
+      height: 34px;
+    }
+
+    &--fendi {
+      width: 120px;
+      height: 35px;
+    }
+  }
+}
+/* end holidays */

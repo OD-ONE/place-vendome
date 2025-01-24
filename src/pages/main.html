@@ -11,11 +11,20 @@
     {# end header #}
 
     <div class="page__content">
+      {# begin preloader #}
+      <div class="preloader">
+        <img class="preloader__bg" src="images/preloader/preloader__bg.jpg" alt="">
+        <img class="preloader__logo" src="images/preloader/preloader__logo.svg" alt="">
+        <div class="preloader__line">
+          <div class="preloader__line-inner"></div>
+        </div>
+        <div class="preloader__percent"><span>0</span>%</div>
+        <div class="preloader__loading">LOADING</div>
+      </div>
+      {# end preloader #}
+
       {% include "components/complex/hero/hero.html" %}
       {% include "components/complex/main-news/main-news.html" %}
-      {% include "components/complex/main-cinema/main-cinema.html" %}
-      {% include "components/complex/main-gift/main-gift.html" %}
-      {% include "components/complex/main-stay/main-stay.html" %}
 
       {% from "components/embedded/icon/icon.html" import icon %}
 
@@ -102,8 +111,80 @@
       </div>
       {# end life #}
 
+      {# begin luxury #}
+      <div class="luxury">
+        <div class="wrapper luxury__wrapper">
+          <img class="luxury__img" src="images/luxury/luxury__img.svg" alt="">
+          <div class="luxury__title">REDEFINING LUXURY</div>
+          <div class="luxury__subtitle">More than 200 of the most covetable luxury brands at Fashion Avenue ready for you to discover</div>
+          <a href="" class="button button--ghost luxury__link">LEARN MORE</a>
+        </div>
+      </div>
+      {# end luxury #}
+
+      {# begin holidays #}
+      <div class="holidays">
+        <div class="holidays__bg">
+          <div class="holidays__item holidays__item--active" data-brand="lv">
+            <video class="holidays__video" src="resources/video/holiday--1.mp4" autoplay muted loop></video>
+            <div class="holidays__content">
+              <div class="holidays__title">
+                VIVIENNE HOLIDAYS <br>
+                COLLECTION
+              </div>
+              <div class="holidays__text">
+                Louis Vuitton’s mascot Vivienne adorns a myriad <br>
+                of Monogram small leather goods
+              </div>
+              <a class="button button--ghost holidays__link" href="" title="">
+                LEARN MORE
+              </a>
+            </div>
+          </div>
+          <div class="holidays__item" data-brand="cartier">
+            <video class="holidays__video" src="resources/video/holiday--2.mp4" autoplay muted loop></video>
+            <div class="holidays__content">
+              <div class="holidays__title">
+                Cartier Magical Night
+              </div>
+              <div class="holidays__text">
+                The Maison invites you into a mesmerizing tale of winter
+              </div>
+              <a class="button button--ghost holidays__link" href="" title="">
+                LEARN MORE
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper holidays__wrapper">
+          <div class="holidays__brands">
+            <div class="holidays__brand holidays__brand--active" data-brand="lv">
+              {{ icon(mod = "holidays__brand-logo holidays__brand-logo--lv", svg = "lv") }}
+            </div>
+            <div class="holidays__brand" data-brand="cartier">
+              {{ icon(mod = "holidays__brand-logo holidays__brand-logo--cartier", svg = "cartier") }}
+            </div>
+            <div class="holidays__brand">
+              {{ icon(mod = "holidays__brand-logo holidays__brand-logo--prada", svg = "prada") }}
+            </div>
+            <div class="holidays__brand">
+              {{ icon(mod = "holidays__brand-logo holidays__brand-logo--gucci", svg = "gucci") }}
+            </div>
+            <div class="holidays__brand">
+              {{ icon(mod = "holidays__brand-logo holidays__brand-logo--dior", svg = "dior") }}
+            </div>
+            <div class="holidays__brand">
+              {{ icon(mod = "holidays__brand-logo holidays__brand-logo--fendi", svg = "fendi") }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {# end holidays #}
+
       {% include "components/complex/main-cinema/main-cinema.html" %}
       {% include "components/complex/main-gift/main-gift.html" %}
+      {% include "components/complex/main-stay/main-stay.html" %}
     </div>
 
     {# begin footer #}

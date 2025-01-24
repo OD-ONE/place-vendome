@@ -16,7 +16,7 @@ if (document.querySelector('.life')) {
       pinSpacing: true,
       scrub: 0.6,
       snap: false,
-      markers: true,
+      markers: false,
       anticipatePin: 0.5,
       onEnter: () => {
         document.querySelector('.life').classList.add('life--active');

@@ -1,0 +1,53 @@
+/* begin luxury */
+.luxury {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #0F1921;
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    position: absolute;
+    top: calc(50% - 269px);
+    left: 50%;
+    z-index: 1;
+    color: #fff;
+    font-weight: 500;
+    font-size: 176px;
+    font-family: $font-title;
+    white-space: nowrap;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+  }
+
+  &__subtitle {
+    position: absolute;
+    top: calc(50% - 140px);
+    left: 50%;
+    z-index: 1;
+    width: 444px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  &__link {
+    position: absolute;
+    top: calc(50% - 59px);
+    left: 50%;
+    z-index: 1;
+    width: 185px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+  }
+}
+/* end luxury */

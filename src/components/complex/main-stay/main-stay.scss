@@ -13,6 +13,7 @@
     justify-content: center;
     font-weight: 500;
     font-size: 184px;
+    font-family: $font-title;
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
@@ -64,7 +65,7 @@
       }
     }
 
-    &::before {
+    /* &::before {
       position: absolute;
       inset: 0;
       z-index: -1;
@@ -72,7 +73,7 @@
       height: 100%;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
       content: "";
-    }
+    } */
 
     &::after {
       position: absolute;
@@ -113,6 +114,7 @@
     margin-bottom: 32px;
     font-weight: 500;
     font-size: 46px;
+    font-family: $font-title;
     line-height: 54px;
     text-align: center;
     text-transform: uppercase;

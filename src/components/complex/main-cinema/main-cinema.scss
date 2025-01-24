@@ -1,6 +1,6 @@
 /* begin main-cinema */
 .main-cinema {
-  padding: 130px 0 103px;
+  padding: 131px 0 103px;
   color: white;
   background-color: #0F1921;
 
@@ -74,7 +74,7 @@
     height: 100%;
     object-fit: cover;
     opacity: 1;
-    transition: $transition opacity; 
+    transition: $transition opacity;
   }
 
   &__media-video {

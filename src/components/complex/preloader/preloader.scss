@@ -1,0 +1,68 @@
+/* begin preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  pointer-events: none;
+
+  &--hidden {
+    opacity: 0;
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__logo {
+    position: absolute;
+    top: calc(50% - 56px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__line {
+    position: absolute;
+    top: calc(50% + 118px);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #5A758A;
+    transform: translateY(-50%);
+  }
+
+  &__line-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background: #fff;
+  }
+
+  &__percent {
+    position: absolute;
+    top: calc(50% + 211px);
+    left: 50%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    transform: translate(-50%, -50%);
+  }
+
+  &__loading {
+    position: absolute;
+    top: calc(50% + 260px);
+    left: 50%;
+    color: #88D2D9;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+  }
+}
+/* end preloader */

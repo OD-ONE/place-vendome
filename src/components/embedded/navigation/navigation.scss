@@ -21,6 +21,11 @@
     border-radius: 50%;
     pointer-events: all;
 
+    &--prev {
+      position: absolute;
+      left: -612px;
+    }
+
     &--next {
       margin-left: auto;
       transform: rotate(180deg);

@@ -31,6 +31,8 @@
 @include font-face(400, montserrat, italic, 'montserrat/Montserrat-Italic');
 @include font-face(500, montserrat, normal, 'montserrat/Montserrat-Medium');
 @include font-face(500, montserrat, italic, 'montserrat/Montserrat-MediumItalic');
-@include font-face(600, montserrat, normal, 'montserrat/Montserrat-Semibold');
-@include font-face(600, montserrat, italic, 'montserrat/Montserrat-SemiboldItalic');
+@include font-face(600, montserrat, normal, 'montserrat/Montserrat-SemiBold');
+@include font-face(600, montserrat, italic, 'montserrat/Montserrat-SemiBoldItalic');
+@include font-face(300, bodoniclassic, normal, 'bodoniclassic/BodoniClassicText-CyrillicLight');
+@include font-face(400, bodoniclassic, normal, 'bodoniclassic/BodoniClassic-CyrillicRoman');
 /* end fonts */

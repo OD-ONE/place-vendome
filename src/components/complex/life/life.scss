@@ -32,8 +32,8 @@
 
   &__start-title {
     position: absolute;
-    top: calc(50% - 79px);
-    right: -113px;
+    top: calc(50% - 48px);
+    right: -120px;
     display: flex;
     flex-shrink: 0;
     align-items: center;
@@ -44,19 +44,21 @@
     color: #fff;
     font-weight: 500;
     font-size: 86px;
+    font-family: $font-title;
     text-transform: uppercase;
   }
 
   &__start-title-center {
     width: 394px;
     height: 257px;
-    margin: 23px -2px -25px -110px;
+    margin: 6px 1px -25px -88px;
   }
 
   &__start-title-right {
     color: #fff;
     font-weight: 500;
     font-size: 86px;
+    font-family: $font-title;
     text-transform: uppercase;
   }
 
@@ -67,6 +69,7 @@
     color: #fff;
     font-weight: 500;
     font-size: 16px;
+    white-space: nowrap;
     transform: translate(-50%, -50%);
   }
 
@@ -160,7 +163,7 @@
 
   &__item-num {
     position: absolute;
-    bottom: 150px;
+    bottom: 10%;
     left: 50px;
     color: #fff;
     font-weight: 600;
@@ -169,7 +172,7 @@
 
   &__item-title-container {
     position: absolute;
-    bottom: 136px;
+    bottom: 8%;
     left: 50%;
     overflow: hidden;
     transform: translateX(-50%);
@@ -186,7 +189,7 @@
 
   &__item-desc-container {
     position: absolute;
-    bottom: 323px;
+    bottom: 25%;
     left: 50%;
     overflow: hidden;
     transform: translateX(-50%);
@@ -204,7 +207,7 @@
   &__item-link {
     position: absolute;
     right: 48px;
-    bottom: 155px;
+    bottom: 10%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
