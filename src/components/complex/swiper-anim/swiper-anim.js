@@ -10,8 +10,8 @@ const dotTl = gsap.timeline({
     pin: true,
     pinSpacing: true,
     start: 'top top',
-    end: '+=300%',
-    scrub: '0.5',
+    end: '+=250%',
+    scrub: true,
   },
 });
 
