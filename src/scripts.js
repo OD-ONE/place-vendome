@@ -11,6 +11,7 @@ import initMainStay from './components/complex/main-stay/main-stay.js';
 import './components/complex/life/life.js';
 import './components/complex/holidays/holidays.js';
 import './components/complex/preloader/preloader.js';
+import './components/complex/swiper-anim/swiper-anim.js';
 
 new LazyLoad({
   elements_selector: '.js-lazy',

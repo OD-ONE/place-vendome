@@ -1,21 +1,28 @@
 /* begin swiper-anim */
 .swiper-anim {
-  width: 575px;
-  height: 757px;
-  margin: 1000px auto 0;
-  overflow: hidden;
-  border-radius: 9999px 9999px 0 0;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100vh;
 
-  &__img {
+  &__el {
     width: 575px;
     height: 757px;
-    object-fit: cover;
-    transform: scale(3) translateY(11px);
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 9999px 9999px 0 0;
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
   }
 
-  &__mesto {
+  &__img {
     width: 100%;
-    height: 2000px;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(3) translateY(11px);
   }
 }
 /* end swiper-anim */
