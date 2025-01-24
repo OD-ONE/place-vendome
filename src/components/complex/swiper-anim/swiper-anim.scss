@@ -8,6 +8,11 @@
   height: 100vh;
   margin: -970px 0 140px;
   background-color: transparent;
+  pointer-events: none;
+
+  &--visible {
+    pointer-events: auto;
+  }
 
   &__el {
     width: 575px;
@@ -19,6 +24,12 @@
     .swiper-slide {
       display: flex;
       justify-content: center;
+      opacity: 0;
+      transition: opacity 0.6s;
+
+      &.swiper-slide-active {
+        opacity: 1;
+      }
     }
   }
 

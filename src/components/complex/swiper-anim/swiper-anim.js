@@ -2,9 +2,17 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
 import Swiper from 'swiper';
+// import { EffectFade } from 'swiper/modules';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const swiper = new Swiper('.swiper-anim__el', {
+  rewind: true,
+  speed: 600,
+  slidesPerView: 1,
+});
+
+const imgs = gsap.utils.toArray('.swiper-anim__img');
 const dotTl = gsap.timeline({
   scrollTrigger: {
     trigger: '.swiper-anim',
@@ -22,19 +30,21 @@ dotTl.to(document.querySelector('.swiper-anim__el'), {
   borderTopLeftRadius: 0,
   borderTopRightRadius: 0,
   ease: 'circ.out',
+  onUpdate() {
+    if (this.progress() === 0.95 || this.progress() > 0.95) {
+      document.querySelector('.swiper-anim').classList.add('swiper-anim--visible');
+    } else {
+      document.querySelector('.swiper-anim').classList.remove('swiper-anim--visible');
+      swiper.slideTo(0);
+    }
+  },
 });
 
-dotTl.to(document.querySelector('.swiper-anim__img'), {
+dotTl.to(imgs, {
   scale: 1,
   translateY: '0px',
   ease: 'circ.out',
 }, '<');
-
-const swiper = new Swiper('.swiper-anim__el', {
-  loop: true,
-  speed: 600,
-  slidesPerView: 1,
-});
 
 const swiperAnim = document.querySelector('.swiper-anim');
 
