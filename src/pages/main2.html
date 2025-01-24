@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% set pageTitle = 'main' %}
+    {% include "components/complex/head/head.html" %}
+  </head>
+
+  <body class="page">
+    <div class="page__content">
+      {# begin preloader #}
+      {# <div class="preloader">
+        <img class="preloader__bg" src="images/preloader/preloader__bg.jpg" alt="">
+        <img class="preloader__logo" src="images/preloader/preloader__logo.svg" alt="">
+        <div class="preloader__line">
+          <div class="preloader__line-inner"></div>
+        </div>
+        <div class="preloader__percent"><span>0</span>%</div>
+        <div class="preloader__loading">LOADING</div>
+      </div> #}
+      {# end preloader #}
+      <div class="swiper-anim">
+        <div class="swiper swiper-anim__el">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="swiper-anim__img" src="images/swiper-anim/swiper-anim__img--1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-anim__mesto"></div>
+    </div>
+  </body>
+</html>
