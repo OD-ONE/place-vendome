@@ -1,0 +1,25 @@
+/* begin brands */
+.brands {
+  overflow-x: clip;
+  background-color: #000;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__banner {
+    position: relative;
+    z-index: 2;
+    width: 1924px;
+    height: 1120px;
+  }
+
+  &__banner-img {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+  }
+}
+/* end brands */
