@@ -1,0 +1,126 @@
+/* begin hero-anim */
+.hero-anim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  &__bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.75;
+  }
+
+  &__front-container {
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transform: translateX(-50%);
+  }
+
+  &__front {
+    height: auto;
+  }
+
+  &__start-text-container {
+    position: absolute;
+    top: 33.5vh;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+
+  &__start-text-suptitle {
+    margin: 0 0 25px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 25.49px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__start-text-title {
+    color: #fff;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 110%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__bg2 {
+    position: absolute;
+    top: 44.5vh;
+    left: 50%;
+    z-index: 3;
+    width: 12.24vw;
+    height: 37vh;
+    object-fit: cover;
+    border-radius: 1600px 1600px 0 0;
+    transform: translateX(-50%);
+  }
+
+  &__finish-text-container {
+    position: absolute;
+    top: 33.5vh;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+
+  &__finish-text-suptitle {
+    margin: 0 0 25px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__finish-text-title {
+    color: #fff;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 110%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__start-title {
+    position: absolute;
+    top: 40.5vh;
+    left: 50%;
+    z-index: 99;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    transform: translateX(-50%);
+  }
+
+  &__start-title-left {
+    color: #fff;
+    font-weight: 400;
+    font-size: 86px;
+    text-transform: uppercase;
+  }
+
+  &__start-title-center {
+    width: 394px;
+    height: 257px;
+    margin: 6px 1px -57px -88px;
+  }
+
+  &__start-title-right {
+    color: #fff;
+    font-weight: 400;
+    font-size: 86px;
+    text-transform: uppercase;
+  }
+}
+/* end hero-anim */

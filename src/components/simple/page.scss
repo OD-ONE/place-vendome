@@ -1,4 +1,8 @@
 /* begin page */
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 .page {
   display: flex;
@@ -11,6 +15,10 @@ body,
   font-family: $font;
 
   &--2 {
+    background-color: #000;
+  }
+
+  &--3 {
     background-color: #000;
   }
 

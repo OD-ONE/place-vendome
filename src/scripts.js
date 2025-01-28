@@ -13,6 +13,7 @@ import './components/complex/life/life.js';
 import './components/complex/holidays/holidays.js';
 import './components/complex/preloader/preloader.js';
 import './components/complex/swiper-anim/swiper-anim.js';
+import './components/complex/hero-anim/hero-anim.js';
 
 new LazyLoad({
   elements_selector: '.js-lazy',

@@ -3,9 +3,35 @@
   background-color: #0F1921;
 
   &--2 {
+    position: relative;
+    z-index: 1;
     background-color: #000;
 
     .header {
+      &__wrapper {
+        display: flex;
+        justify-content: center;
+      }
+
+      &__banner {
+        height: 120px;
+      }
+    }
+  }
+
+  &--3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: transparent;
+
+    .header {
+      &__wrapper {
+        display: flex;
+        justify-content: center;
+      }
+
       &__banner {
         height: 120px;
       }

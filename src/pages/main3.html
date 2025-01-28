@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% set pageTitle = 'main3' %}
+    {% include "components/complex/head/head.html" %}
+  </head>
+
+  <body class="page page--3">
+    {# begin header #}
+    {% include "components/complex/header/header--3.html" %}
+    {# end header #}
+
+    <div class="page__content">
+      {# begin preloader #}
+      <div class="preloader">
+        <img class="preloader__bg" src="images/preloader/preloader__bg.jpg" alt="">
+        <img class="preloader__logo" src="images/preloader/preloader__logo.svg" alt="">
+        <div class="preloader__line">
+          <div class="preloader__line-inner"></div>
+        </div>
+        <div class="preloader__percent"><span>0</span>%</div>
+        <div class="preloader__loading">LOADING</div>
+      </div>
+      {# end preloader #}
+
+      {# begin hero-anim #}
+      <div class="hero-anim">
+        <img class="hero-anim__bg" src="images/hero-anim/hero-anim__bg.jpg" alt="">
+        <div class="hero-anim__front-container">
+          <img class="hero-anim__front" src="images/hero-anim/hero-anim__front.png" alt="">
+          <img class="hero-anim__bg2" src="images/hero-anim/hero-anim__bg2.jpg" alt="" >
+        </div>
+        <div class="hero-anim__start-text-container">
+          <div class="hero-anim__start-text-suptitle">IMAGINE a palce</div>
+          <div class="hero-anim__start-text-title">
+            WHERE EVERYONE<br>
+            IS HAPPY ...
+          </div>
+        </div>
+        <div class="hero-anim__finish-text-container">
+          <div class="hero-anim__finish-text-suptitle">BUT WHY IMAGINE </div>
+          <div class="hero-anim__finish-text-title">
+            WHEN THAT PLACE <br>
+            IS HERE ...
+          </div>
+        </div>
+        <div class="hero-anim__start-title">
+          <div class="hero-anim__start-title-left">ADD</div>
+          <img class="hero-anim__start-title-center" src="images/life/life__start-title-center.svg" alt="">
+          <div class="hero-anim__start-title-right">TO LIFE</div>
+        </div>
+      </div>
+      {# end hero-anim #}
+    </div>
+  </body>
+</html>
