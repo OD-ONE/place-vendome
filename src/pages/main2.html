@@ -42,6 +42,187 @@
       </div>
 
       {% include "components/complex/brands/brands.html" %}
+
+      {% from "components/embedded/icon/icon.html" import icon %}
+
+      {# begin main-news-2 #}
+      <div class="main-news-2">
+        <div class="wrapper main-news-2__wrapper">
+          <ul class="main-news-2__list">
+            <li class="main-news-2__item main-news-2__item--cartier">
+              <div class="main-news-2__item-inner">
+                <div class="main-news-2__cartier-left">
+                  <div class="main-news-2__cartier-suptitle">STAY UPDATED WITH LATEST</div>
+                  <div class="main-news-2__cartier-title">WHAT'S ON</div>
+                  <img class="main-news-2__cartier-img main-news-2__cartier-img--1" src="images/main-news-2/main-news-2__cartier-img--1.jpg" alt="" >
+                </div>
+                <div class="main-news-2__cartier-right">
+                  {{ icon(mod = "main-news-2__cartier-logo", svg = "cartier") }}
+                  <div class="main-news-2__body">
+                    <div class="main-news-2__body-title">NEW COLLECTION</div>
+                    <div class="main-news-2__body-text">
+                      The red box is the promise from the heart that opens to the most loving of gifts for Valentine's Day.
+                    </div>
+                    <a href="" class="main-news-2__body-link">
+                      <div class="main-news-2__body-link-text">DISCOVER</div>
+                      {{ icon(mod = "main-news-2__body-link-icon", svg = "link-arrow") }}
+                    </a>
+                  </div>
+                  <img class="main-news-2__cartier-img main-news-2__cartier-img--2" src="images/main-news-2/main-news-2__cartier-img--2.jpg" alt="" >
+                  <img class="main-news-2__cartier-img main-news-2__cartier-img--3" src="images/main-news-2/main-news-2__cartier-img--3.jpg" alt="" >
+                </div>
+              </div>
+            </li>
+            <li class="main-news-2__item main-news-2__item--asics">
+              <div class="main-news-2__item-inner">
+                <div class="main-news-2__body">
+                  <div class="main-news-2__body-title">NOW OPEN</div>
+                  <div class="main-news-2__body-text">
+                    Morbi ullamcorper massa nibh, eu finibus mauris cursus eu.
+                    Aliquam eget libero sit amet ex volutpat.
+                  </div>
+                  <a href="" class="main-news-2__body-link">
+                    <div class="main-news-2__body-link-text">DISCOVER</div>
+                    {{ icon(mod = "main-news-2__body-link-icon", svg = "link-arrow") }}
+                  </a>
+                </div>
+                <video class="main-news-2__asics-video" src="resources/video/main-news-2__asics-video.mp4" autoplay muted loop></video>
+                {{ icon(mod = "main-news-2__asics-logo", svg = "asics") }}
+              </div>
+            </li>
+            <li class="main-news-2__item main-news-2__item--abercrombie">
+              <div class="main-news-2__item-inner">
+                {{ icon(mod = "main-news-2__abercrombie-logo", svg = "abercrombie") }}
+                <img class="main-news-2__abercrombie-img" src="images/main-news-2/main-news-2__abercrombie-img.jpg" alt="" >
+                <div class="main-news-2__body">
+                  <div class="main-news-2__body-title">NOW OPEN</div>
+                  <div class="main-news-2__body-text">
+                    Fusce a risus quis tortor dignissim lacinia. In hac habitasse
+                    platea dictumst. In in vehicula libero. Aenean ac hendrerit
+                    dui, ac tincidunt nibh.
+                  </div>
+                  <a href="" class="main-news-2__body-link">
+                    <div class="main-news-2__body-link-text">DISCOVER</div>
+                    {{ icon(mod = "main-news-2__body-link-icon", svg = "link-arrow") }}
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="main-news-2__item main-news-2__item--asics">
+              <div class="main-news-2__item-inner">
+                <div class="main-news-2__body">
+                  <div class="main-news-2__body-title">Valentine's Day</div>
+                  <div class="main-news-2__body-text">
+                    Explore a Selection of the Maison's Creations
+                  </div>
+                  <a href="" class="main-news-2__body-link">
+                    <div class="main-news-2__body-link-text">DISCOVER</div>
+                    {{ icon(mod = "main-news-2__body-link-icon", svg = "link-arrow") }}
+                  </a>
+                </div>
+                <img class="main-news-2__asics-img" src="images/main-news-2/main-news-2__lv-img.jpg" alt="">
+                {{ icon(mod = "main-news-2__asics-logo main-news-2__asics-logo--lv", svg = "lv") }}
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {# end main-news-2 #}
+
+      {# begin gift-card #}
+      <div class="gift-card">
+        <video class="gift-card__bg" src="resources/video/gift-card.mp4" autoplay muted loop></video>
+        <div class="wrapper gift-card__wrapper">
+          <div class="gift-card__top-title">PLACE VENDÔME</div>
+          <div class="gift-card__title">
+            <div class="gift-card__title-left">Gift</div>
+            <div class="gift-card__title-right">Card</div>
+          </div>
+          <div class="gift-card__content">
+            <div class="gift-card__content-title">A WORLD OF HAPPINESS IN ONE CARD</div>
+            <p class="gift-card__content-text">
+              Donec cursus elit id mi lacinia, non fermentum turpis
+              ultricies. Proin fermentum nec felis ac pulvinar.
+              Nullam aliquam pretium magna, ac tincidunt mi
+              elementum ac.
+            </p>
+            <a href="" class="gift-card__content-link">
+              <div class="gift-card__content-link-text">DISCOVER</div>
+              {{ icon(mod = "gift-card__content-link-icon", svg = "link-arrow") }}
+            </a>
+          </div>
+        </div>
+      </div>
+      {# end gift-card #}
+
+      {# begin main-entertainment #}
+      <div class="main-entertainment">
+        <div class="wrapper">
+          <div class="main-entertainment__header">
+              <div class="main-entertainment__header-left">
+                <div class="main-entertainment__suptitle">FUN FOR THE WHOLE FAMILY</div>
+                <div class="main-entertainment__title">ENTERTAINMENT</div>
+              </div>
+              <a class="main-entertainment__header-link" href="">
+                <div class="main-entertainment__header-link-text">DISCOVER</div>
+                {{ icon(mod = "main-entertainment__header-link-icon", svg = "link-arrow") }}
+              </a>
+          </div>
+        </div>
+        <ul class="main-entertainment__list">
+          <li class="main-entertainment__item">
+            <div class="main-entertainment__item-content">
+              <div class="main-entertainment__item-title">
+                Novo Cinemas <br>
+                Movie Tickets
+              </div>
+              <div class="main-entertainment__item-text">
+                Fusce a risus quis tortor dignissim lacinia. In hac habitasse
+                platea dictumst. In in vehicula libero. Aenean ac hendrerit
+                dui, ac tincidunt nibh.
+              </div>
+              <a class="main-entertainment__item-link" href="">
+                <div class="main-entertainment__item-link-text">DISCOVER</div>
+                {{ icon(mod = "main-entertainment__item-link-icon", svg = "link-arrow") }}
+              </a>
+            </div>
+            <div class="main-entertainment__item-img-container">
+              <div class="main-entertainment__item-img-container-inner">
+                <img class="main-entertainment__item-img" src="images/main-entertainment/main-entertainment__item-img--1.jpg" alt="">
+              </div>
+            </div>
+            <div class="main-entertainment__item-logo-container">
+              <img class="main-entertainment__item-logo" src="images/main-entertainment/main-entertainment__item-logo--1.svg" alt="">
+            </div>
+          </li>
+          <li class="main-entertainment__item">
+            <div class="main-entertainment__item-content">
+              <div class="main-entertainment__item-title">
+                TROCADERO <br>
+                THEME PARK
+              </div>
+              <div class="main-entertainment__item-text">
+                Fusce a risus quis tortor dignissim lacinia. In hac habitasse
+                platea dictumst. In in vehicula libero. Aenean ac hendrerit
+                dui, ac tincidunt nibh.
+              </div>
+              <a class="main-entertainment__item-link" href="">
+                <div class="main-entertainment__item-link-text">DISCOVER</div>
+                {{ icon(mod = "main-entertainment__item-link-icon", svg = "link-arrow") }}
+              </a>
+            </div>
+            <div class="main-entertainment__item-img-container">
+              <div class="main-entertainment__item-img-container-inner">
+                <img class="main-entertainment__item-img" src="images/main-entertainment/main-entertainment__item-img--2.jpg" alt="">
+              </div>
+            </div>
+            <div class="main-entertainment__item-logo-container">
+              <img class="main-entertainment__item-logo" src="images/main-entertainment/main-entertainment__item-logo--2.svg" alt="">
+            </div>
+          </li>
+        </ul>
+      </div>
+      {# end main-entertainment #}
     </div>
   </body>
 </html>

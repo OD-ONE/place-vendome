@@ -1,0 +1,223 @@
+/* begin main-news-2 */
+.main-news-2 {
+  height: 100vh;
+  overflow: hidden;
+  border-top: 1px solid rgba(#fff, 0.3);
+  border-bottom: 1px solid rgba(#fff, 0.3);
+
+  &__wrapper {
+    height: 100%;
+  }
+
+  &__list {
+    display: flex;
+    height: 100%;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 70px;
+    border-right: 1px solid rgba(#fff, 0.3);
+    border-left: 0;
+
+    &--cartier {
+      display: flex;
+      padding: 0 230px 0 85px;
+
+      .main-news-2 {
+        &__item-inner {
+          position: relative;
+          display: flex;
+          height: 828px;
+        }
+      }
+    }
+
+    &--asics {
+      padding: 0 70px;
+
+      .main-news-2 {
+        &__item-inner {
+          position: relative;
+          height: 776px;
+        }
+
+        &__body {
+          width: 420px;
+          margin: 0 0 38px;
+        }
+      }
+    }
+
+    &--abercrombie {
+      padding: 0 70px;
+
+      .main-news-2 {
+        &__item-inner {
+          position: relative;
+          height: 762px;
+        }
+      }
+    }
+  }
+
+  &__item-inner {
+    position: relative;
+  }
+
+  &__cartier-left {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px 0 0;
+  }
+
+  &__cartier-suptitle {
+    margin: 0 0 31px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__cartier-title {
+    margin: 0 0 60px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 62px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  &__cartier-img {
+    object-fit: cover;
+
+    &--1 {
+      width: 647px;
+      height: 647px;
+    }
+
+    &--2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 270px;
+      height: 270px;
+    }
+
+    &--3 {
+      position: absolute;
+      bottom: 153px;
+      left: 340px;
+      width: 270px;
+      height: 270px;
+    }
+  }
+
+  &__cartier-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 55px 0 0;
+  }
+
+  &__cartier-logo {
+    width: 240px;
+    height: 70px;
+    margin: 0 0 60px;
+    fill: #fff;
+  }
+
+  &__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 48px 0 0;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 110px;
+      height: 1px;
+      background: rgba(#fff, 0.5);
+      content: "";
+    }
+  }
+
+  &__body-title {
+    margin: 0 0 21px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 42px;
+    text-transform: uppercase;
+  }
+
+  &__body-text {
+    min-height: 38px;
+    margin: 0 0 33px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__body-link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__body-link-text {
+    margin: 0 16px 0 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.55em;
+    text-transform: uppercase;
+  }
+
+  &__body-link-icon {
+    width: 25px;
+    height: 10px;
+    fill: #fff;
+  }
+
+  &__asics-img,
+  &__asics-video {
+    width: 430px;
+    height: 430px;
+    margin: 0 0 24px;
+    object-fit: cover;
+  }
+
+  &__asics-video {
+    object-position: left;
+  }
+
+  &__asics-logo {
+    width: 240px;
+    height: 76px;
+    fill: #fff;
+
+    &--lv {
+      width: 250px;
+      height: 30px;
+      margin: 23px 0 0;
+    }
+  }
+
+  &__abercrombie-img {
+    margin: 0 0 40px;
+  }
+
+  &__abercrombie-logo {
+    width: 240px;
+    height: 52px;
+    margin: 0 0 32px;
+    fill: #fff;
+  }
+}
+/* end main-news-2 */

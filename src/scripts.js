@@ -14,6 +14,9 @@ import './components/complex/holidays/holidays.js';
 import './components/complex/preloader/preloader.js';
 import './components/complex/swiper-anim/swiper-anim.js';
 import './components/complex/hero-anim/hero-anim.js';
+import './components/complex/main-news-2/main-news-2.js';
+import './components/complex/gift-card/gift-card.js';
+import './components/complex/main-entertainment/main-entertainment.js';
 
 new LazyLoad({
   elements_selector: '.js-lazy',
