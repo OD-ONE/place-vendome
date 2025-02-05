@@ -30,5 +30,23 @@ if (document.querySelector('.main-news-2')) {
     left: `-${widthItems - document.documentElement.clientWidth + wrapperWidth}px`,
     ease: 'none',
   });
+
+  const mainNewsTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.main-news-2',
+      start: 'top bottom-=25%',
+      markers: false,
+    },
+  });
+
+  gsap.set('.main-news-2__cartier-header', {
+    opacity: 0,
+  });
+
+  mainNewsTL.to('.main-news-2__cartier-header', {
+    opacity: 1,
+    duration: 1,
+    ease: 'power1.out',
+  });
 }
 /* end main-news-2 */

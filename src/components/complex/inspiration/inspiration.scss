@@ -1,0 +1,30 @@
+/* begin inspiration */
+.inspiration {
+  padding: 175px 0 0;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(#fff, 0.3);
+
+  &__header {
+    border-bottom: 1px solid rgba(#fff, 0.3);
+  }
+
+  &__list {
+    display: flex;
+    height: 100vh;
+  }
+
+  &__item {
+    position: relative;
+
+    &--empty {
+      display: flex;
+      flex-shrink: 0;
+      width: 670px;
+    }
+  }
+
+  &__item-img {
+    height: 100%;
+  }
+}
+/* end inspiration */

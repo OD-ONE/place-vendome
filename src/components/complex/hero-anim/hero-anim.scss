@@ -1,8 +1,5 @@
 /* begin hero-anim */
 .hero-anim {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -54,23 +51,41 @@
     text-transform: uppercase;
   }
 
+  &__start-text-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px 0 0;
+  }
+
+  &__start-text-scroll-icon {
+    width: 14px;
+    height: 19px;
+    margin: 0 11px 0 0;
+    fill: #fff;
+  }
+
+  &__start-text-scroll-text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
   &__bg2 {
     position: absolute;
-    top: 44.5vh;
-    left: 50%;
-    z-index: 3;
-    width: 12.24vw;
+    top: 100vh;
+    z-index: 5;
+    width: 27.61vw;
     height: 37vh;
     object-fit: cover;
     border-radius: 1600px 1600px 0 0;
-    transform: translateX(-50%);
   }
 
   &__finish-text-container {
     position: absolute;
     top: 33.5vh;
     left: 50%;
-    z-index: 1;
+    z-index: 3;
     transform: translateX(-50%);
   }
 
@@ -121,6 +136,22 @@
     font-weight: 400;
     font-size: 86px;
     text-transform: uppercase;
+  }
+
+  &__slider {
+    position: absolute;
+    top: 54%;
+    left: 6.3vw;
+    z-index: 5;
+    width: 660px;
+    height: 505px;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  &__slider-img {
+    width: 100%;
+    height: 100%;
   }
 }
 /* end hero-anim */

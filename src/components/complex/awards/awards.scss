@@ -1,0 +1,16 @@
+/* begin awards */
+.awards {
+  position: relative;
+  height: 100vh;
+  padding: 140px 0;
+
+  &__img-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1602px;
+    height: 740px;
+    transform: translate(-50%, -50%);
+  }
+}
+/* end awards */

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% set pageTitle = 'main4' %}
+    {% include "components/complex/head/head.html" %}
+  </head>
+
+  <body class="page page--4">
+    {# begin header #}
+    {% include "components/complex/header/header--3.html" %}
+    {# end header #}
+
+    <div class="page__content">
+      {# begin preloader #}
+      <div class="preloader">
+        <img class="preloader__bg" src="images/preloader/preloader__bg.jpg" alt="">
+        <img class="preloader__logo" src="images/preloader/preloader__logo.svg" alt="">
+        <div class="preloader__line">
+          <div class="preloader__line-inner"></div>
+        </div>
+        <div class="preloader__percent"><span>0</span>%</div>
+        <div class="preloader__loading">LOADING</div>
+      </div>
+      {# end preloader #}
+
+      {% from "components/embedded/icon/icon.html" import icon %}
+
+      {# begin hero-anim #}
+      <div class="hero-anim">
+        <img class="hero-anim__bg" src="images/hero-anim/hero-anim__bg.jpg" alt="">
+        <div class="hero-anim__front-container">
+          <img class="hero-anim__front" src="images/hero-anim/hero-anim__front.png" alt="">
+          <div class="hero-anim__finish-text-container">
+            <div class="hero-anim__finish-text-suptitle">BUT WHY IMAGINE </div>
+            <div class="hero-anim__finish-text-title">
+              WHEN THAT PLACE <br>
+              IS HERE ...
+            </div>
+          </div>
+          <img class="hero-anim__bg2" src="images/hero-anim/hero-anim__bg2.jpg" alt="" >
+        </div>
+        <div class="hero-anim__start-text-container">
+          <div class="hero-anim__start-text-suptitle">IMAGINE a palce</div>
+          <div class="hero-anim__start-text-title">
+            WHERE EVERYONE<br>
+            IS HAPPY ...
+          </div>
+          <div class="hero-anim__start-text-scroll">
+            <img class="hero-anim__start-text-scroll-icon" src="images/hero-anim/hero-anim__start-text-scroll-icon.svg" alt="">
+            <div class="hero-anim__start-text-scroll-text">SCROLL DOWN</div>
+          </div>
+        </div>
+        <div class="hero-anim__slider">
+          <div class="wrapper">
+            <img class="hero-anim__slider-img" src="images/hero-anim/hero-anim__slider-img.png" alt="">
+          </div>
+        </div>
+      </div>
+      {# end hero-anim #}
+
+      {% include "components/complex/brands/brands.html" %}
+
+      {% from "components/embedded/icon/icon.html" import icon %}
+
+      {# begin main-news-2 #}
+      <div class="main-news-2">
+        <div class="wrapper main-news-2__wrapper">
+          <ul class="main-news-2__list">
+            <li class="main-news-2__item main-news-2__item--cartier">
+              <div class="main-news-2__item-inner">
+                <div class="main-news-2__cartier-left">
+                  <div class="main-news-2__cartier-header">
+                    <div class="main-news-2__cartier-suptitle">STAY UPDATED WITH LATEST</div>
+                    <div class="main-news-2__cartier-title">WHAT'S ON</div>
+                  </div>
+                  <img class="main-news-2__cartier-img main-news-2__cartier-img--1" src="images/main-news-2/main-news-2__cartier-img--1.jpg" alt="" >
+                </div>
+                <div class="main-news-2__cartier-right">
+                  {{ icon(mod = "main-news-2__cartier-logo", svg = "cartier") }}
+                  <div class="main-news-2__body">
+                    <div class="main-news-2__body-title">NEW COLLECTION</div>
+                    <div class="main-news-2__body-text">
+                      The red box is the promise from the heart that opens to the most loving of gifts for Valentine's Day.
+                    </div>
+                    <a href="" class="main-news-2__body-link">
+                      <div class="main-news-2__body-link-text">DISCOVER</div>
+                      {{ icon(mod = "main-news-2__body-link-icon", svg = "link-arrow") }}
+                    </a>
+                  </div>
+                  <img class="main-news-2__cartier-img main-news-2__cartier-img--2" src="images/main-news-2/main-news-2__cartier-img--2.jpg" alt="" >
+                  <img class="main-news-2__cartier-img main-news-2__cartier-img--3" src="images/main-news-2/main-news-2__cartier-img--3.jpg" alt="" >
+                </div>
+              </div>
+            </li>
+            <li class="main-news-2__item main-news-2__item--asics">
+              <div class="main-news-2__item-inner">
+                <div class="main-news-2__body">
+                  <div class="main-news-2__body-title">NOW OPEN</div>
+                  <div class="main-news-2__body-text">
+                    Morbi ullamcorper massa nibh, eu finibus mauris cursus eu.
+                    Aliquam eget libero sit amet ex volutpat.
+                  </div>
+                  <a href="" class="main-news-2__body-link">
+                    <div class="main-news-2__body-link-text">DISCOVER</div>
+                    {{ icon(mod = "main-news-2__body-link-icon", svg = "link-arrow") }}
+                  </a>
+                </div>
+                <video class="main-news-2__asics-video" src="resources/video/main-news-2__asics-video.mp4" autoplay muted loop></video>
+                {{ icon(mod = "main-news-2__asics-logo", svg = "asics") }}
+              </div>
+            </li>
+            <li class="main-news-2__item main-news-2__item--abercrombie">
+              <div class="main-news-2__item-inner">
+                {{ icon(mod = "main-news-2__abercrombie-logo", svg = "abercrombie") }}
+                <img class="main-news-2__abercrombie-img" src="images/main-news-2/main-news-2__abercrombie-img.jpg" alt="" >
+                <div class="main-news-2__body">
+                  <div class="main-news-2__body-title">NOW OPEN</div>
+                  <div class="main-news-2__body-text">
+                    Fusce a risus quis tortor dignissim lacinia. In hac habitasse
+                    platea dictumst. In in vehicula libero. Aenean ac hendrerit
+                    dui, ac tincidunt nibh.
+                  </div>
+                  <a href="" class="main-news-2__body-link">
+                    <div class="main-news-2__body-link-text">DISCOVER</div>
+                    {{ icon(mod = "main-news-2__body-link-icon", svg = "link-arrow") }}
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="main-news-2__item main-news-2__item--asics">
+              <div class="main-news-2__item-inner">
+                <div class="main-news-2__body">
+                  <div class="main-news-2__body-title">Valentine's Day</div>
+                  <div class="main-news-2__body-text">
+                    Explore a Selection of the Maison's Creations
+                  </div>
+                  <a href="" class="main-news-2__body-link">
+                    <div class="main-news-2__body-link-text">DISCOVER</div>
+                    {{ icon(mod = "main-news-2__body-link-icon", svg = "link-arrow") }}
+                  </a>
+                </div>
+                <img class="main-news-2__asics-img" src="images/main-news-2/main-news-2__lv-img.jpg" alt="">
+                {{ icon(mod = "main-news-2__asics-logo main-news-2__asics-logo--lv", svg = "lv") }}
+              </div>
+            </li>
+            <li class="main-news-2__item main-news-2__item--empty">
+            </li>
+          </ul>
+        </div>
+      </div>
+      {# end main-news-2 #}
+
+      {# begin gift-card #}
+      <div class="gift-card">
+        <video class="gift-card__bg" src="resources/video/gift-card.mp4" autoplay muted loop></video>
+        <div class="wrapper gift-card__wrapper">
+          <div class="gift-card__top-title">PLACE VENDÔME</div>
+          <div class="gift-card__title">
+            <div class="gift-card__title-left">Gift</div>
+            <div class="gift-card__title-right">Card</div>
+          </div>
+          <div class="gift-card__content">
+            <div class="gift-card__content-title">A WORLD OF HAPPINESS IN ONE CARD</div>
+            <p class="gift-card__content-text">
+              Donec cursus elit id mi lacinia, non fermentum turpis
+              ultricies. Proin fermentum nec felis ac pulvinar.
+              Nullam aliquam pretium magna, ac tincidunt mi
+              elementum ac.
+            </p>
+            <a href="" class="gift-card__content-link">
+              <div class="gift-card__content-link-text">DISCOVER</div>
+              {{ icon(mod = "gift-card__content-link-icon", svg = "link-arrow") }}
+            </a>
+          </div>
+        </div>
+      </div>
+      {# end gift-card #}
+
+      {# begin main-entertainment #}
+      <div class="main-entertainment main-entertainment--main">
+        <div class="wrapper">
+          <div class="main-entertainment__header">
+              <div class="main-entertainment__header-left">
+                <div class="main-entertainment__suptitle">FUN FOR THE WHOLE FAMILY</div>
+                <div class="main-entertainment__title">ENTERTAINMENT</div>
+              </div>
+              <a class="main-entertainment__header-link" href="">
+                <div class="main-entertainment__header-link-text">DISCOVER</div>
+                {{ icon(mod = "main-entertainment__header-link-icon", svg = "link-arrow") }}
+              </a>
+          </div>
+        </div>
+        <div class="main-entertainment__list-images">
+          <div class="main-entertainment__list-images-col">
+            <div class="main-entertainment__list-images-item main-entertainment__list-images-item--lg">
+              <img class="main-entertainment__list-images-item-img main-entertainment__list-images-item-img--1" src="images/main-entertainment/main-entertainment__list-images-item-img--1.jpg" alt="">
+            </div>
+          </div>
+          <div class="main-entertainment__list-images-col">
+            <div class="main-entertainment__list-images-item main-entertainment__list-images-item--sm">
+              <img class="main-entertainment__list-images-item-img main-entertainment__list-images-item-img--2" src="images/main-entertainment/main-entertainment__list-images-item-img--2.jpg" alt="">
+              <div class="main-entertainment__list-images-item-content-container">
+                <img class="main-entertainment__list-images-item-content main-entertainment__list-images-item-content--1" src="images/main-entertainment/main-entertainment__list-images-item-content--1.png" alt="">
+              </div>
+            </div>
+            <div class="main-entertainment__list-images-item main-entertainment__list-images-item--sm">
+              <div class="main-entertainment__list-images-item-content-container">
+                <img class="main-entertainment__list-images-item-content main-entertainment__list-images-item-content--2" src="images/main-entertainment/main-entertainment__list-images-item-content--2.png" alt="">
+              </div>
+              <img class="main-entertainment__list-images-item-img main-entertainment__list-images-item-img--3" src="images/main-entertainment/main-entertainment__list-images-item-img--3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      {# end main-entertainment #}
+
+      {# begin fountains #}
+      <div class="fountains">
+        <div class="fountains__header">
+          <div class="fountains__title">The Dancing Fountains</div>
+          <div class="fountains__subtitle">The fountains are situated on 7,400 sqm <br> with over 30 dining venues</div>
+        </div>
+        <a class="fountains__link" href="" >
+          <div class="fountains__link-text">DISCOVER</div>
+          {{ icon(mod = "fountains__link-icon", svg = "link-arrow") }}
+        </a>
+        <video class="fountains__video" src="resources/video/fountains__video.mp4" autoplay muted loop></video>
+      </div>
+      {# end fountains #}
+
+      {# begin bliss #}
+      <div class="bliss">
+        <div class="wrapper bliss__wrapper">
+          <div class="bliss__list">
+            <div class="bliss__item bliss__item--1">
+              <img class="bliss__item-img bliss__item-img--1" src="images/bliss/bliss__item-img--1.png" alt="">
+            </div>
+            <div class="bliss__item bliss__item--2">
+              <img class="bliss__item-img bliss__item-img--2" src="images/bliss/bliss__item-img--2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      {# end bliss #}
+
+      {# begin saint-germain #}
+      <div class="saint-germain">
+        <img class="saint-germain__bg-lines" src="images/saint-germain/saint-germain__bg-lines.svg" alt="">
+        <div class="wrapper saint-germain__wraper">
+          <img class="saint-germain__content" src="images/saint-germain/saint-germain__content.png" alt="">
+          <div class="saint-germain__carousel">
+            <div class="saint-germain__carousel-inner">
+              <div class="saint-germain__carousel-item">
+                <img class="saint-germain__carousel-img" src="images/saint-germain/saint-germain__carousel-img--1.jpg" alt="">
+              </div>
+              <div class="saint-germain__carousel-item">
+                <img class="saint-germain__carousel-img" src="images/saint-germain/saint-germain__carousel-img--2.jpg" alt="">
+              </div>
+              <div class="saint-germain__carousel-item">
+                <img class="saint-germain__carousel-img" src="images/saint-germain/saint-germain__carousel-img--3.jpg" alt="">
+              </div>
+              <div class="saint-germain__carousel-item">
+                <img class="saint-germain__carousel-img" src="images/saint-germain/saint-germain__carousel-img--4.jpg" alt="">
+              </div>
+              <div class="saint-germain__carousel-item">
+                <img class="saint-germain__carousel-img" src="images/saint-germain/saint-germain__carousel-img--1.jpg" alt="">
+              </div>
+              <div class="saint-germain__carousel-item">
+                <img class="saint-germain__carousel-img" src="images/saint-germain/saint-germain__carousel-img--2.jpg" alt="">
+              </div>
+              <div class="saint-germain__carousel-item">
+                <img class="saint-germain__carousel-img" src="images/saint-germain/saint-germain__carousel-img--3.jpg" alt="">
+              </div>
+              <div class="saint-germain__carousel-item">
+                <img class="saint-germain__carousel-img" src="images/saint-germain/saint-germain__carousel-img--4.jpg" alt="">
+              </div>
+              <div class="saint-germain__carousel-item">
+                <img class="saint-germain__carousel-img" src="images/saint-germain/saint-germain__carousel-img--1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {# end saint-germain #}
+
+      {# begin inspiration #}
+      <div class="inspiration">
+        <div class="inspiration__header">
+          <div class="wrapper">
+            <div class="main-entertainment__header">
+                <div class="main-entertainment__header-left">
+                  <div class="main-entertainment__suptitle">GET THE TRENDS</div>
+                  <div class="main-entertainment__title">INSPIRATION</div>
+                </div>
+                <a class="main-entertainment__header-link" href="">
+                  <div class="main-entertainment__header-link-text">DISCOVER</div>
+                  {{ icon(mod = "main-entertainment__header-link-icon", svg = "link-arrow") }}
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper inspiration__wrapper">
+          <div class="inspiration__list">
+            <div class="inspiration__item">
+              <img class="inspiration__item-img inspiration__item-img--1" src="images/inspiration/inspiration__item-img--1.png" alt="">
+            </div>
+            <div class="inspiration__item">
+              <img class="inspiration__item-img inspiration__item-img--2" src="images/inspiration/inspiration__item-img--2.png" alt="">
+            </div>
+            <div class="inspiration__item">
+              <img class="inspiration__item-img inspiration__item-img--3" src="images/inspiration/inspiration__item-img--3.png" alt="">
+            </div>
+            <div class="inspiration__item">
+              <img class="inspiration__item-img inspiration__item-img--4" src="images/inspiration/inspiration__item-img--4.png" alt="">
+            </div>
+            <div class="inspiration__item inspiration__item--empty"></div>
+          </div>
+        </div>
+      </div>
+      {# end inspiration #}
+
+      {# begin awards #}
+      <div class="awards">
+        <img class="awards__img-content" src="images/awards/awards__img-content.png" alt="">
+      </div>
+      {# end awards #}
+    </div>
+
+    {# begin footer #}
+    <footer class="footer footer--2">
+      <div class="footer__wrapper">
+        <video class="footer__video" src="resources/video/footer.mp4" autoplay muted loop></video>
+        <img class="footer__banner-img" src="images/footer/footer2.png" alt="">
+      </div>
+    </footer>
+    {# end footer #}
+  </body>
+</html>

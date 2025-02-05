@@ -7,6 +7,22 @@
   overflow-x: clip;
   background-color: #0F1921;
 
+  &--2 {
+    padding: 0;
+    background: transparent;
+
+    .footer {
+      &__video {
+        bottom: 325px;
+        left: 50%;
+        z-index: 3;
+        width: 880px;
+        height: 479px;
+        object-fit: cover;
+      }
+    }
+  }
+
   &__wrapper {
     position: relative;
     display: flex;

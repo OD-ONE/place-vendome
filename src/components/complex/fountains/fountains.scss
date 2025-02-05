@@ -1,0 +1,66 @@
+/* begin fountains */
+.fountains {
+  position: relative;
+  height: 100vh;
+  padding: 115px 0 0;
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 27px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 62px;
+    line-height: 80px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-weight: 300;
+    font-size: 26px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 121px;
+    left: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+  }
+
+  &__link-text {
+    margin: 0 16px 0 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.55em;
+    text-transform: uppercase;
+  }
+
+  &__link-icon {
+    width: 25px;
+    height: 10px;
+    fill: #fff;
+  }
+}
+/* end fountains */

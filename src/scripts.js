@@ -17,6 +17,11 @@ import './components/complex/hero-anim/hero-anim.js';
 import './components/complex/main-news-2/main-news-2.js';
 import './components/complex/gift-card/gift-card.js';
 import './components/complex/main-entertainment/main-entertainment.js';
+import './components/complex/inspiration/inspiration.js';
+import './components/complex/fountains/fountains.js';
+import './components/complex/bliss/bliss.js';
+import './components/complex/saint-germain/saint-germain.js';
+import './components/complex/awards/awards.js';
 
 new LazyLoad({
   elements_selector: '.js-lazy',
